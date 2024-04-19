@@ -1,0 +1,125 @@
+/* Reset dei margini e del padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altezza al 100% della viewport */
+    background-image: url('./img/back_login.jpg'); /* Usa l'immagine di sfondo */
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Assegna un z-index per posizionare .outer-login-container */
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+.login-container {
+    backdrop-filter: blur(6px);
+    border: 1px solid #ff6a00af;
+    -webkit-box-shadow: -1px -1px 30px -8px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: -1px -1px 30px -8px rgba(0, 0, 0, 0.9);
+    box-shadow: 10px 10px 100px 7px #ff6a0073;
+    padding: 20px;
+    border-radius: 1.6rem;
+    color: #ff6a00;
+    z-index: 3
+}
+
+/* Stili per il titolo */
+.login-container h2 {
+    font-size: 3rem;
+    line-height: 2;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Stili per i gruppi di form */
+.form-group {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 25px 0;
+}
+
+/* caselle di input */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #ff6a0028;
+    box-shadow: inset 0 0 15px #ff6a00;
+    padding-left: 40px; /* Aggiungi spazio per l'icona */
+}
+
+
+/* Contenitore dell'icona e dell'input */
+.input-icon-container {
+    position: relative;
+}
+
+.input-bold{
+    font-weight: bold;
+    color: #ff6a00;
+}
+
+.form-group input::placeholder {
+    color: #ffffff50; /* Colore del testo del placeholder */
+    font-weight: lighter;
+}
+
+
+/* Stili per l'icona */
+.input-icon {
+    position: absolute;
+    left: 10px; /* Posiziona l'icona all'interno del riquadro di input */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Dimensione dell'icona */
+    height: auto;
+}
+
+/* Stili per l'icona dell'occhio */
+.toggle-password {
+    position: absolute;
+    right: 10px; /* Posiziona l'icona dell'occhio a destra all'interno del riquadro di input */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Dimensione dell'icona */
+    height: auto;
+    cursor: pointer; /* Cambia il cursore in un puntatore quando passi sopra l'icona */
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Stili per il pulsante di invio */
+.form-group-submit {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Assicura che il contenitore occupi l'intera altezza disponibile */
+    
+    
+}
+.form-group-submit button {
+    width: 40%;
+    padding: 10px;
+    position: relative; 
+    background: linear-gradient(90deg, #ff6a0080, #fc4a1480);
+    color: #522200b7;
+    border: 1px solid #ff6900;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form-group-submit button:hover {
+    background: linear-gradient(90deg, #fc4a14cb, #ff6a00cb); /* Modifica il colore dello sfondo qui */
+    transition-delay: 3s; /* Ritarda il cambio di colore di 2 secondi */
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
