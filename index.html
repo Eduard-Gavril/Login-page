@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina di Login</title>
     <!-- dopo questa riga aggiungi stili in css -->
-    <link rel="stylesheet" href="login.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
 </head>
-
 
 <body>
     <div class="outer-login-container">
         <div class="login-container">
             <h2 style="text-align: center;">PyTra</h2>
             <p style="text-align: center;">Eduard's trading bot</p>
-            <form id="loginForm" action="index.html" method="get">
+            <form action="login_page.html" method="post">
                 <div class="form-group">
                     <div class="input-icon-container">
-                        <img src="./img/icons8-male-user-96.png" alt="Icon" class="input-icon">
+                        <i class="ri-user-2-fill" class="input-icon"></i>
                         <input type="email" id="email" name="email" placeholder="Username" required class="input-bold">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-icon-container">
-                        <img src="./img/icons8-lock-96.png" alt="Icon" class="input-icon">
+                        <i class="ri-lock-2-fill"></i>
                         <input type="password" id="password" name="password" placeholder="Password" required class="input-bold">
-                        <img src="./img/hidden.png" alt="Toggle Password" class="toggle-password">
+                        <i class="ri-eye-off-fill toggle-password" id="eye"></i>
                     </div>
                 </div>
                 <div class="form-group-submit">
-                    <button type="button" id="loginButton">Login</button>
+                    <a href="./TEST/TEST.HTML" class="loginn"></a><button type="submit">Login</a></button>
                 </div>
             </form>
         </div>
     </div>
-    <script src="./login.js"></script>
-    <script src="./LogSupaData.js"></script>
+    <script src="./JS/login.js"></script>
 </body>
 </html>

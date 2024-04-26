@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./TEST.CSS">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <title>Tool Name</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx inserisci_qua_il_logo'></i>
+            <div class="logo-name"><span>Next</span>Trail</div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="#"><i class='bx ri-dashboard-2-fill'></i>Dashboard</a></li>
+            <li><a href="#"><i class='bx ri-file-chart-fill'></i>Analisi</a></li>
+            <li><a href="#"><i class='bx ri-file-paper-2-fill'></i>Gulp</a></li>
+            <li><a href="#"><i class='bx ri-mail-send-fill'></i>Tickets</a></li>
+            <li><a href="#"><i class='bx ri-map-pin-user-fill'></i>Utente</a></li>
+            <li><a href="#"><i class='bx ri-settings-4-fill'></i>Impostazioni</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="../login_page.html" class="logout">
+                    <i class='bx ri-logout-circle-line'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="inserisci alias nodo es: RM001">
+                    <button class="search-btn" type="submit"><i class='bx ri-search-2-line'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx ri-notification-3-line'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="../CSS/img/Screenshot 2024-04-22 140609.png">
+            </a>
+        </nav>
+    </div>
+    <script src="./TEST.JS"></script>
+</body>
+
+</html>
