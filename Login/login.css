@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* Altezza al 100% della viewport */
-    background-image: url('./img/back_login.jpg'); /* Usa l'immagine di sfondo */
+    background-image: url('../img/back_login.jpg'); /* Usa l'immagine di sfondo */
     background-size: cover;
     background-position: center;
     z-index: 1; /* Assegna un z-index per posizionare .outer-login-container */

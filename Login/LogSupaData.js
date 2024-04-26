@@ -20,9 +20,9 @@ document.getElementById('loginButton').addEventListener('click', async (event) =
 
     if (data.length > 0) {
         console.log('Login successful');
-        window.location.href = 'test/test.html'; // Reindirizza alla pagina successiva
+        window.location.href = 'Dashboard/dashboard.html'; // Reindirizza alla pagina successiva
     } else {
         console.error('Invalid credentials');
-        window.location.href = 'fallito.html'; // Reindirizza alla pagina successiva
+        window.location.href = 'index.html'; // Reindirizza alla pagina successiva
     }
 });
